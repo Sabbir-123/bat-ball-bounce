@@ -46,7 +46,7 @@
     position: relative;
     left: 480px;
     top: -150px;
-    /* transition: transform 2s ease-out 0.2s; */
+    /* transition: transform 0.8s ease-out 0.2s; */
 }
 /* .field:hover .ball{
     transform: translate(700px, -400px);
