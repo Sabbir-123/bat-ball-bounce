@@ -1,0 +1,54 @@
+.field{
+    border: 3px solid indianred;
+    height: 300px;
+    width: 1000px;
+}
+.field:hover .bat{
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+.bat{
+    transition: transform 0.2s ease-in ;
+    transform: rotate(-40deg);
+    height: 300px;
+}
+@keyframes bounce {
+    0%{
+        background-color: red;
+        left: 480px;
+        top: -150px;
+    }
+    25%{
+        top: -250px;
+    }
+    50%{
+        top: -150px;
+    }
+    75%{
+        top: -250px;
+    }
+
+    100%{
+        background-color: orangered;
+        left: 900px;
+        top: -150px;
+    }
+    
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    animation: bounce 3s ease-in-out 5s infinite forwards;
+    animation-play-state: running;
+    /* animation-delay: 3s; */
+    position: relative;
+    left: 480px;
+    top: -150px;
+    /* transition: transform 2s ease-out 0.2s; */
+}
+/* .field:hover .ball{
+    transform: translate(700px, -400px);
+} */
+
